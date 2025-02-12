@@ -1,16 +1,8 @@
 pipeline {
     agent any
 
-    environment {
-        // Docker Hub credentials stored in Jenkins credentials
-        DOCKER_HUB_CREDENTIALS = credentials('docker-hub-credentials')
-        // Docker Hub repository details
-        DOCKER_HUB_REPO = 'fykio/cidemo'
-        DOCKER_IMAGE_TAG = 'latest'
-    }
-
     stages {
-        // Stage 1: Checkout code from GitHub using GitHub App integration
+        // Stage 1: Checkout code from GitHub using GitHub PAT
         stage('Checkout Code') {
             steps {
                 checkout([
@@ -19,7 +11,7 @@ pipeline {
                     extensions: [],
                     userRemoteConfigs: [[
                         url: 'https://github.com/Fykio/cidemo.git',
-                        credentialsId: 'github-app-credentials' // Your GitHub App credentials ID in Jenkins
+                        credentialsId: 'CI-Demo-GitHub-PAT' // Your GitHub credentials ID in Jenkins
                     ]]
                 ])
             }
@@ -35,22 +27,15 @@ pipeline {
         // Stage 3: Build Docker image
         stage('Build Docker Image') {
             steps {
-                script {
-                    // Build the Docker image
-                    dockerImage = docker.build("${env.DOCKER_HUB_REPO}:${env.DOCKER_IMAGE_TAG}", '.')
-                }
+                sh 'docker build -t fykio/cidemo:latest .'
             }
         }
 
         // Stage 4: Push Docker image to Docker Hub
         stage('Push Docker Image') {
             steps {
-                script {
-                    // Log in to Docker Hub User Account
-                    docker.withRegistry('https://registry.hub.docker.com', 'docker-hub-credentials') {
-                        // Push the Docker image
-                        dockerImage.push()
-                    }
+                withDockerRegistry([credentialsId: "DockerHub", url: ""]) {
+                    sh 'docker push fykio/cidemo:latest'
                 }
             }
         }
