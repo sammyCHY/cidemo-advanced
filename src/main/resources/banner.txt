@@ -1,0 +1,26 @@
+
+
+
+        CCCCCCCCCCCCCIIIIIIIIII     DDDDDDDDDDDDD
+     CCC::::::::::::CI::::::::I     D::::::::::::DDD
+   CC:::::::::::::::CI::::::::I     D:::::::::::::::DD
+  C:::::CCCCCCCC::::CII::::::II     DDD:::::DDDDD:::::D
+ C:::::C       CCCCCC  I::::I         D:::::D    D:::::D     eeeeeeeeeeee       mmmmmmm    mmmmmmm      ooooooooooo
+C:::::C                I::::I         D:::::D     D:::::D  ee::::::::::::ee   mm:::::::m  m:::::::mm  oo:::::::::::oo
+C:::::C                I::::I         D:::::D     D:::::D e::::::eeeee:::::eem::::::::::mm::::::::::mo:::::::::::::::o
+C:::::C                I::::I         D:::::D     D:::::De::::::e     e:::::em::::::::::::::::::::::mo:::::ooooo:::::o
+C:::::C                I::::I         D:::::D     D:::::De:::::::eeeee::::::em:::::mmm::::::mmm:::::mo::::o     o::::o
+C:::::C                I::::I         D:::::D     D:::::De:::::::::::::::::e m::::m   m::::m   m::::mo::::o     o::::o
+C:::::C                I::::I         D:::::D     D:::::De::::::eeeeeeeeeee  m::::m   m::::m   m::::mo::::o     o::::o
+ C:::::C       CCCCCC  I::::I         D:::::D    D:::::D e:::::::e           m::::m   m::::m   m::::mo::::o     o::::o
+  C:::::CCCCCCCC::::CII::::::II     DDD:::::DDDDD:::::D  e::::::::e          m::::m   m::::m   m::::mo:::::ooooo:::::o
+   CC:::::::::::::::CI::::::::I     D:::::::::::::::DD    e::::::::eeeeeeee  m::::m   m::::m   m::::mo:::::::::::::::o
+     CCC::::::::::::CI::::::::I     D::::::::::::DDD       ee:::::::::::::e  m::::m   m::::m   m::::m oo:::::::::::oo
+        CCCCCCCCCCCCCIIIIIIIIII     DDDDDDDDDDDDD            eeeeeeeeeeeeee  mmmmmm   mmmmmm   mmmmmm   ooooooooooo
+
+
+
+
+
+
+
