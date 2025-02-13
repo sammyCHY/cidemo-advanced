@@ -27,7 +27,7 @@ pipeline {
         // Stage 3: Build Docker image
         stage('Build Docker Image') {
             steps {
-                sh 'docker build -t fykio/cidemo:latest .'
+                sh 'docker build -t fykio/cidemo:v2 .'
             }
         }
 
@@ -35,7 +35,7 @@ pipeline {
         stage('Push Docker Image') {
             steps {
                 withDockerRegistry([credentialsId: "DockerHub", url: ""]) {
-                    sh 'docker push fykio/cidemo:latest'
+                    sh 'docker push fykio/cidemo:v2'
                 }
             }
         }

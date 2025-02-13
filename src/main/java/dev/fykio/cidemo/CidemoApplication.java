@@ -18,7 +18,7 @@ import java.util.logging.Logger;
 @RequestMapping(path = "v1")
 public class CidemoApplication {
 
-	private static Logger log = Logger.getLogger(CidemoApplication.class.getName());
+	private static final Logger log = Logger.getLogger(CidemoApplication.class.getName());
 
 	public static void main(String[] args) {
 		SpringApplication.run(CidemoApplication.class, args);
