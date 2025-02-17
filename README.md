@@ -1,5 +1,12 @@
 # Continuous Integration Demo
-This repository is a simple Spring Boot App to demonstrate the process of Continuous Integration using GitHub, Maven, Jenkins, Docker, and Docker Hub.
+This repository is a simple Spring Boot App to demonstrate the process of Continuous Integration using GitHub, Maven, Jenkins, Docker, and Docker Hub. The CI process checks out the code from GitHub, package it, build the image, and push the image to DockerHub, fully automated.
+
+## Prerequisites
+- Basic understanding of Git, GitHub, Docker, DockerHub, and CI/CD
+- Right versions of Java and Maven installed on your machine (check [Dependencies](#Dependencies) below)
+- Git, Jenkins, and Docker installed on your machine
+- GitHub account with Personal Access Token configured
+- DockerHub account with `cidemo` repository created
 
 ## Getting Started
 - Clone this repository to your local machine.
