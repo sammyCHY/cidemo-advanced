@@ -10,8 +10,8 @@ pipeline {
                     branches: [[name: '*/main']],
                     extensions: [],
                     userRemoteConfigs: [[
-                        url: 'https://github.com/Fykio/cidemo.git',
-                        credentialsId: 'CI-Demo-GitHub-PAT' // Your GitHub credentials ID in Jenkins
+                        url: 'https://github.com/sammyCHY/cidemo-advanced.git',
+                        credentialsId: 'sammychy-pat' // Your GitHub credentials ID in Jenkins
                     ]]
                 ])
             }
