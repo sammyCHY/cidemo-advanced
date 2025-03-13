@@ -27,7 +27,7 @@ pipeline {
         // Stage 3: Build Docker image
         stage('Build Docker Image') {
             steps {
-                sh 'docker build -t cidemo:v${BUILD_ID} .'
+                sh 'docker build -t cidemo:${BUILD_ID} .'
             }
         }
 
@@ -35,7 +35,7 @@ pipeline {
         stage('Push Docker Image') {
             steps {
                 withDockerRegistry([credentialsId: "DockerHub-pat", url: ""]) {
-                    sh 'docker push cidemo:v${BUILD_ID}'
+                    sh 'docker push cidemo:${BUILD_ID}'
                 }
             }
         }
