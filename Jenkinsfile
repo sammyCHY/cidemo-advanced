@@ -11,7 +11,7 @@ pipeline {
                     extensions: [],
                     userRemoteConfigs: [[
                         url: 'https://github.com/sammyCHY/cidemo-advanced.git',
-                        credentialsId: 'sammychy-pat' // Your GitHub credentials ID in Jenkins
+                        credentialsId: 'darey-pat' // Your GitHub credentials ID in Jenkins
                     ]]
                 ])
             }
