@@ -35,7 +35,7 @@ pipeline {
         stage('Push Docker Image') {
             steps {
                 withDockerRegistry([credentialsId: "DockerHub-pat", url: ""]) {
-                    sh 'docker push cidemo:v2 .'
+                    sh 'docker push cidemo:v2'
                 }
             }
         }
