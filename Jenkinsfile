@@ -27,7 +27,7 @@ pipeline {
         // Stage 3: Build Docker image
         stage('Build Docker Image') {
             steps {
-                sh 'docker build -t cidemo:v2 .'
+                sh 'docker build -t sammylin6525/cidemo:v2 .'
             }
         }
 
@@ -35,7 +35,7 @@ pipeline {
         stage('Push Docker Image') {
             steps {
                 withDockerRegistry([credentialsId: "DockerHub-pat", url: ""]) {
-                    sh 'docker push cidemo:v2'
+                    sh 'docker push sammylin6525/cidemo:v2'
                 }
             }
         }
